@@ -258,25 +258,25 @@ tracks/0/keys = {
 [sub_resource type="AnimationNodeAnimation" id=14]
 animation = "AttackRight"
 
-[sub_resource type="AnimationNodeAnimation" id=17]
+[sub_resource type="AnimationNodeAnimation" id=15]
 animation = "AttackLeft"
 
-[sub_resource type="AnimationNodeAnimation" id=35]
+[sub_resource type="AnimationNodeAnimation" id=16]
 animation = "AttackDown"
 
-[sub_resource type="AnimationNodeAnimation" id=36]
+[sub_resource type="AnimationNodeAnimation" id=17]
 animation = "AttackUp"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id=18]
 auto_triangles = false
 blend_point_0/node = SubResource( 14 )
 blend_point_0/pos = Vector2( 1, 0 )
-blend_point_1/node = SubResource( 17 )
+blend_point_1/node = SubResource( 15 )
 blend_point_1/pos = Vector2( -1, 0 )
-blend_point_2/node = SubResource( 35 )
+blend_point_2/node = SubResource( 16 )
 blend_point_2/pos = Vector2( 0, 1.1 )
-blend_point_3/node = SubResource( 36 )
-blend_point_3/pos = Vector2( 0, -1 )
+blend_point_3/node = SubResource( 17 )
+blend_point_3/pos = Vector2( 0, -1.1 )
 triangles = PoolIntArray( 0, 1, 2, 0, 1, 3 )
 min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
@@ -355,16 +355,25 @@ graph_offset = Vector2( -171.13, 98.3056 )
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0, -9 )
 texture = ExtResource( 1 )
 hframes = 60
 frame = 28
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = -1.5708
 shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/AttackDown = SubResource( 2 )
@@ -384,6 +393,6 @@ anims/RunUp = SubResource( 13 )
 tree_root = SubResource( 33 )
 anim_player = NodePath("../AnimationPlayer")
 parameters/playback = SubResource( 34 )
-parameters/Attack/blend_position = Vector2( 0.0200803, 2.20948 )
+parameters/Attack/blend_position = Vector2( 0.158233, 0.27341 )
 parameters/Idle/blend_position = Vector2( -0.000803232, 0.00215268 )
 parameters/Run/blend_position = Vector2( 0, 0 )

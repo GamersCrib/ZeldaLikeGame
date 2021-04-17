@@ -21,7 +21,7 @@ var state = MOVE
 func _ready():
 	$AnimationTree.active = true
 
-func _physics_process(delta):
+func _process(delta):
 
 	match state:
 		MOVE:
