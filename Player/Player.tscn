@@ -618,7 +618,7 @@ __meta__ = {
 position = Vector2( 0, -9 )
 texture = ExtResource( 1 )
 hframes = 60
-frame = 12
+frame = 36
 __meta__ = {
 "_edit_lock_": true
 }
@@ -651,12 +651,11 @@ anims/RunUp = SubResource( 17 )
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 44 )
 anim_player = NodePath("../AnimationPlayer")
-active = true
 parameters/playback = SubResource( 45 )
-parameters/Attack/blend_position = Vector2( 0.158233, 0.27341 )
-parameters/Idle/blend_position = Vector2( -0.000803232, 0.00215268 )
-parameters/Roll/blend_position = Vector2( -0.00562251, -0.867235 )
-parameters/Run/blend_position = Vector2( 0, 0 )
+parameters/Attack/blend_position = Vector2( 0, 1 )
+parameters/Idle/blend_position = Vector2( 0, 1 )
+parameters/Roll/blend_position = Vector2( 0, 1 )
+parameters/Run/blend_position = Vector2( 0, 1 )
 
 [node name="HitboxPivot" type="Position2D" parent="."]
 position = Vector2( 0, -4 )
