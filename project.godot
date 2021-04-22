@@ -19,6 +19,10 @@ config/name="GameLikeZelda"
 run/main_scene="res://Wolrd.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+PlayerStat="*res://Player/PlayerStat.tscn"
+
 [display]
 
 window/size/width=320
