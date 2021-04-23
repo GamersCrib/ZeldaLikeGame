@@ -3,4 +3,4 @@
 [ext_resource path="res://Stat.tscn" type="PackedScene" id=1]
 
 [node name="PlayerStat" instance=ExtResource( 1 )]
-max_health = 4
+max_health = 10
