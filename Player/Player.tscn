@@ -684,8 +684,8 @@ shape = SubResource( 46 )
 disabled = true
 
 [node name="Hurtbox" parent="." instance=ExtResource( 5 )]
+position = Vector2( 0, -3 )
 collision_layer = 4
-collision_mask = 2147483648
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
 position = Vector2( 0, -5.16348 )
